@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #222;
+
+}
+
+.sub-heading{
+	text-align: center;
+	color: var(--background-color);
+	font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.heading{
+	text-align: center;
+	color: darkturquoise;
+	padding-top: 2rem;
+	font-size: 2.5rem;
+	text-transform: uppercase;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+    background: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 9%;
+}
+
+.header .navbar a{
+    color: #fff;
+    font-size: 1.7rem;
+    margin-right: 2rem;
+}
+ .header .navbar a:hover{
+     color: #3867d6;
+ }
+
+ .header .navbar .active{
+    color: #3867d6;
+ }
+
+ .container{
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 5px;
+   width: 1100px;
+   margin-top: 5%;
+   
+ }
+
+ .container .card{
+     width: 230px;
+     position: relative;
+     height: 310px;
+     background: #f0f0f0;
+     margin: 30px 25px;
+     padding: 20px 15px;
+     display: flex;
+     flex-direction: column;
+     box-shadow: 0.5px 10px #e6e6e6;
+     transition: 0.3 ease-in-out;
+     margin-top: 5%;
+     border-radius: 3px;
+ }
+
+ .container .card .imgBx{
+     position: relative;
+     width: 200px;
+     height: 220px;
+     top: -60px;
+     box-shadow: 0 5px 20px rgba(0, 0, 0,1.2);
+
+ }
+
+ .container .card .imgBx img{
+     max-width: 170%;
+     border-radius: 10px;
+ }
+
+ .container .card .imgBx p{
+     padding: 0.2rem;
+     font-size: 1.5rem;
+ }
+
+  .container .card .imgBx img:hover{
+      transform:scale(1.1);
+  }
+
+
+  @media (max-width:991px){
+      
+    html{
+    font-size: 55%;
+    }
+    .header{
+        padding: 1.5rem 2rem;
+    }
+  }
+
+  @media (max-width:768px){
+      .header{
+          width: 450px;
+      }
+      .header .navbar{
+          position: absolute;
+          top: 100%;
+          left: 0;
+          right: 0;
+          border-top: .1rem solid #222;
+          background: #333;
+          width: 430px;
+      }
+
+      .header .navbar a{
+           display: flex;
+           background: #222;
+           border-radius: .5rem;
+           padding: 1.3rem;
+           margin: 1.3rem;
+           font-size: 2.2rem;
+      }
+
+      .container{
+      grid-template-columns: repeat(ma);
+      }
+
+  }
